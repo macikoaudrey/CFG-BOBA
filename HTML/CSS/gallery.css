@@ -1,22 +1,10 @@
 .container{
-  width:80%;
-  height:80%;
   display: block;
   margin-top: 15px;
   justify-content: space-between;
-  align-items: center
-}
-
-body{
-  margin-left: 55px;
-  margin-right: 50px;
-  margin-top: 50px;
-  background-color: rgb(60,60,60);
-}
-
-p{
-  margin-left: 50px;
-  margin-right: 50px;
+  align: center;
+  position: relative;
+  width: 50%;
 }
 
 * {box-sizing:border-box}
@@ -27,18 +15,16 @@ ul {
   overflow: hidden;
   background-color:rgb(60, 60, 60);
   width: 100%;
+  text-align: center;
   }
-
-li {
-  float: left;
-}
 
 li a {
   display: block;
   color: #ffffff;
   padding: 8px 20px;
   text-decoration: none;
-  text-align:center;
+  text-align: center;
+  float: left;
 }
 
 li a:hover:not(.active) {
@@ -48,6 +34,10 @@ li a:hover:not(.active) {
 body{
   background-color: rgb(60, 60, 60);
   font-family: Georgia;
+  margin-left: 324px;
+  margin-right: 200px;
+  margin-top: 50px;
+  background-color: rgb(60,60,60);
 }
 div.top{
   color: white;
@@ -56,34 +46,38 @@ div.top{
   height: 90px;
   padding:30px 45px 60px 45px;
 }
+
 h1 {
   text-shadow: 4px 4px rgb(255, 99, 71);
   font-size: 52px;
   color: white;
+  align-self: center;
   }
-
-  .container {
-  position: relative;
-  width: 50%;
-}
 
 .image {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 800px;
+  height: 800px;
+  align: center;
+}
+
+.image1 {
+  display: block;
+  width: 800px;
+  height: 800px;
+  align: center;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  position:absolute;
+  top: -10;
+  bottom: -10;
+  left: -10;
+  right: -370;
   opacity: 0;
   transition: .5s ease;
   background-color: rgb(60, 60, 60);
+
 }
 .container:hover .overlay {
   opacity: 0.7;
@@ -91,7 +85,7 @@ h1 {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -99,4 +93,9 @@ h1 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
