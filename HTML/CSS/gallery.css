@@ -1,0 +1,29 @@
+.container{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.image{
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+div.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity:90;
+}
+
+div.container img:hover{
+  transform: scale(1.1);
+}
+
+div.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
