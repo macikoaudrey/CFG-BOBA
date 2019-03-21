@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(60, 60, 60);
+  width: 100%;
+  position: fixed;
+  }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 16px 20px;
+  text-decoration: none;
+  text-align:center;
+
+}
+
+li a:hover:not(.active)
+{  background-color:rgb(255, 99, 71);
+}
+body{
+font-family: Georgia;
+
+background-color: rgb(60, 60, 60);}
+div.header{
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 4px 3px rgb(255, 99, 71);
+  color: white;
+  padding: 19px;
+  margin: 1px;
+font-family:Georgia;
+}
+p{
+  color:white ;
+  text-shadow: 2px 1px rgb(255, 99, 71);
+  text-align: center;
+  padding:0;
+  font-size: 18px;
+}
+input[type=text], select, textarea {
+  width: 85%;
+  padding: 12px;
+  border: 1.5px double grey;
+  resize:vertical;
+}
+
+label {
+  padding: 16px 16px 16px 0;
+  display: inline-block;
+}
+
+input[type=SUBMIT] {
+  background-color:rgb(60,60,60);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:rgb(255, 99, 71);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 2px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
