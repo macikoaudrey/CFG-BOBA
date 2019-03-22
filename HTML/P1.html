@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+
+  <link rel="stylesheet" href="css/P1.css">
+
+  </head>
+
+  <body>
+<h1> WORLD PHOTOGRAPHY </h1>
+
+
+<ul>
+
+<li><a href="P1.html">HOME</a> </li>
+
+<li><a href="gallery.html">PORTFOLIO</a> </li>
+
+<li><a href="P3.html">ABOUT</a></li>
+
+<li><a href="P4.html">CONTACT</a> </li>
+
+</ul>
+
+
+
+<div class = "slideshow-container">
+
+  <div class="mySlides fade">
+
+<img src="c12.jpg" width=85% height=630px >
+
+  </div>
+
+  <div class="mySlides fade">
+
+<img src="c5.jpg" width=85% height=630px>
+
+  </div>
+
+  <div class="mySlides fade">
+
+<img src="c11.jpg" width=85% height=630px>
+
+  </div>
+
+  <div class="mySlides fade">
+
+<img src="g5.jpg" width=85% height=630px >
+
+  </div>
+
+  <div class="mySlides fade">
+
+<img src="g7.jpg" width=85% height=630px >
+
+  </div>
+
+  <div class="mySlides fade">
+
+<img src="IMG_0389.jpg" width=85% height=630px >
+
+  </div>
+
+</div>
+
+
+
+<div style= "text-align:center">
+
+  <span class="dot"></span>
+
+  <span class="dot"></span>
+
+  <span class="dot"></span>
+
+  <span class="dot"></span>
+
+  <span class="dot"></span>
+
+</div>
+
+
+
+<!-- <div class="top"> -->
+
+<h2>CAPTURE AN EVERLASTING MOMENT</h2>
+
+
+
+<script>var slideIndex = 0;
+
+showSlides();
+
+
+
+function showSlides() {
+
+  var i;
+
+  var slides = document.getElementsByClassName("mySlides");
+
+  var dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+
+    slides[i].style.display = "none";
+
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].className = dots[i].className.replace(" active", "");
+
+  }
+
+  slides[slideIndex-1].style.display = "block";
+
+  dots[slideIndex-1].className += " active";
+
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+
+}
+
+</script>
+
+
+
+  </body>
+
+</html>

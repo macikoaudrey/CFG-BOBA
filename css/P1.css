@@ -27,7 +27,11 @@ li a:hover:not(.active) {
 body{
   background-color: rgb(60, 60, 60);
   font-family: Georgia;
-  width:85%;
+  width:100%
+}
+
+body{
+  margin-left: 100px;
 }
 div.top{
   color: white;
@@ -49,14 +53,15 @@ h1 {
     text-shadow: 3px 3px rgb(255, 99, 71);
     font-size: 50px;
     color: white;
-    text-align:right;
+    text-align:left;
     width:110%;
     margin:10px 0 0 0;
   }
+  
   h2{
     color: white;
     text-shadow: 2px 2px rgb(255, 99, 71);
-    text-align: right;
+    text-align: left;
     /* padding:1px; */
     font-size: 20px;
     width:110%;
