@@ -5,7 +5,7 @@ ul {
   overflow: hidden;
   background-color:rgb(60, 60, 60);
   width: 100%;
-  position: fixed;
+  position: none;
   }
 
 li {
@@ -30,9 +30,9 @@ body{
 }
 
 body{
-  margin-left: 220px;
+  margin-left: 80px;
   margin-top: 50px;
-  margin-right: 150px;
+  margin-right: 420px;
 }
 div.top{
   color: white;
@@ -61,11 +61,11 @@ h1 {
   h2{
     color: white;
     text-shadow: 2px 2px rgb(255, 99, 71);
-    text-align: right;
+    text-align: left;
     /* padding:1px; */
     font-size: 20px;
     width:110%;
-    margin-right: 20px;
+    margin-right: 10px 0 0 0;
   }
 
    * {box-sizing: border-box;}
@@ -86,7 +86,8 @@ h1 {
      height: 10px;
      width: 10px;
      justify-content:center;
-     margin: 13px 3px;
+     margin: 13px 5px;
+     align-content:center;
      background-color: #bbb;
      border-radius: 50%;
      display:inline-block;
